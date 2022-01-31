@@ -72,7 +72,7 @@ const MovieDetail: FunctionComponent<MovieDetailProps> = () => {
                 <ul className="movieDetail__rightCol__wrapper__content__ratings">
                   {movie.Ratings &&
                     movie.Ratings.map((rating) => (
-                      <li>
+                      <li key={rating.Source}>
                         {rating.Source}:{rating.Value}
                       </li>
                     ))}
