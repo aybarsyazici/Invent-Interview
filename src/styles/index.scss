@@ -1,0 +1,71 @@
+@import "./variables";
+@import "./grid";
+@import "./components/";
+@import "./views/";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: brown-font, Arial, Helvetica, sans-serif !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif !important;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  color: #3a4183;
+}
+h2 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  color: #3a4183;
+
+}
+
+h3 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  color: #3a4183;
+
+}
+
+h4 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  color: #3a4183;
+
+}
+
+h5 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  color: #3a4183;
+
+
+}
+h6 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  color: #3a4183;
+
+}
+
+
+iframe {
+  border-radius: 0 !important;
+}

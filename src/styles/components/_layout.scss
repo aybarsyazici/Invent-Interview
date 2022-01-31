@@ -1,0 +1,33 @@
+.main{
+    margin-top: $header-height;
+    
+    padding: 25px 100px;
+
+    &--maximized{
+        margin-top: $header-height-min;
+    }
+
+    transition: all 0.25s ease-in-out;
+
+    background-color: #f2f5fa;
+    min-height: calc(100vh - #{$header-height});
+
+    &__leftCol{
+        height: 100%;
+        & > img {
+            object-fit: contain;
+            height: 100%;
+        }
+    }
+
+    &__rightCol{
+        border: 2px solid blue;
+    }
+
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+    .main{
+        padding: 25px;
+    }
+  }

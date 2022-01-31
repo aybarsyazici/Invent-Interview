@@ -1,0 +1,46 @@
+
+
+.card{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1em;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+
+    &__poster {
+        object-fit: contain;
+        height: 100%;
+        width: 280px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__info{
+        padding: 1em;
+    }
+
+
+    &:hover{
+        -moz-transform: translate(0, -8px);
+        -ms-transform: translate(0, -8px);
+        -o-transform: translate(0, -8px);
+        -webkit-transform: translate(0, -8px);
+        transform: translate(0, -8px);
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+}
+@media only screen and (max-width: $breakpoint-md) {
+
+    .card__poster{
+        width: 0;
+        height: 0;
+    }
+  }

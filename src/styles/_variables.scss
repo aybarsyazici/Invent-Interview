@@ -1,0 +1,28 @@
+$header-height: 125px;
+$header-height-min: 70px;
+
+$breakpoint-xs: 0 !default;
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 992px !default;
+$breakpoint-xl: 1200px !default;
+$breakpoint-xxl: 1600px !default;
+
+$breakpoints: (
+  'xs': $breakpoint-xs,
+  'sm': $breakpoint-sm,
+  'md': $breakpoint-md,
+  'lg': $breakpoint-lg,
+  'xl': $breakpoint-xl,
+  'xxl': $breakpoint-xxl,
+) !default;
+
+$spacer: 1.5rem !default;
+
+$gutters: (
+  'xs': $spacer * 0.25,
+  'sm': $spacer * 0.5,
+  'md': $spacer,
+  'lg': $spacer * 1.5,
+  'xl': $spacer * 3,
+);

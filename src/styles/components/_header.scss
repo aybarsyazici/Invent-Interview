@@ -1,0 +1,58 @@
+.header{
+    position: absolute;
+    display: flex;
+    z-index: 999;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $header-height;
+
+    border-bottom: 1px solid black;
+    color: #3a4183;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+    padding: 0 4em;
+    justify-content: space-between;
+    align-items: center;
+
+    &__arrow{
+        right: 4em;
+        cursor: pointer;
+        min-width: 16px;
+    }
+
+    &__label{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+
+        &__span{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            & > svg {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &--min{
+        height: $header-height-min;
+    }
+
+    transition: height 0.25s ease-in-out;
+}
+
+@media only screen and (max-width: $breakpoint-lg) {
+
+    .header__label{
+        display: none;
+    }
+
+    .header__buttons{
+        display: none;
+    }
+  }

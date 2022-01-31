@@ -1,0 +1,28 @@
+.btn{
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+
+    padding: 0.25em 0.75em;
+
+    border-radius: 5px;
+
+
+
+    &--primary{
+        border-color: #4fe7a9;
+        color: #4fe7a9;
+    }
+
+    &--secondary{
+        border-color: #3a4183;
+        color: #3a4183;
+    }
+
+    &--active{
+        color: white;
+        background-color: #4fe7a9;
+    }
+}
