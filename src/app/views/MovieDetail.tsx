@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import Axios from "axios";
 import { environment } from "../../environment/environment";
 import { Movie } from "../types/movie";
-import { Grid } from "../components";
 
 interface MovieDetailProps { }
 

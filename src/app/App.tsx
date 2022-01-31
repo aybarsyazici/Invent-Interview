@@ -1,7 +1,6 @@
 import Layout from './components/Layout';
 import { useSelector } from 'react-redux';
 import { RootState } from './stores/store';
-import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import MovieList from './views/MovieList';
 import MovieDetail from './views/MovieDetail';
