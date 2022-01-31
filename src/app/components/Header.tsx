@@ -118,8 +118,8 @@ const Header: FunctionComponent<HeaderProps> = ({
           </Grid.Col>
           <Grid.Col lg={6} xl={3}>
             <Button
-              active={type === undefined}
-              onClick={(e) => handleTypeSelect(undefined)}
+              active={type === "all"}
+              onClick={(e) => handleTypeSelect("all")}
             >
               All
             </Button>

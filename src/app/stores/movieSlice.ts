@@ -5,7 +5,7 @@ import { environment } from '../../environment/environment';
 import { RootState } from './store';
 
 
-export type movieType = 'movie' | 'series' | 'episode' | undefined
+export type movieType = 'movie' | 'series' | 'episode' | 'all'
 
 export interface MovieState {
   page: number,
@@ -19,7 +19,7 @@ export interface MovieState {
 const initialState: MovieState = {
   page: 1,
   movieList: [],
-  type: undefined,
+  type: "all",
   s: "star wars",
   loading: true,
   y: undefined,
@@ -31,10 +31,10 @@ interface bySearchResult {
   totalResults: string;
 }
 
-export const fetchMovies = createAsyncThunk<bySearchResult, void, {state: RootState}>('movies/fetch', async (status, thunkApi) => {
+export const fetchMovies = createAsyncThunk<bySearchResult, void, { state: RootState }>('movies/fetch', async (status, thunkApi) => {
   const { page, type, s, y } = thunkApi.getState()['movies'];
 
-  const { data } = await Axios.get(environment.apiUrl, { params: { page: page, type: type ? "" : type, s: s, y: y } });
+  const { data } = await Axios.get(environment.apiUrl, { params: { page: page, type: type === "all" ? "" : type, s: s, y: y } });
 
   return data;
 })
